@@ -1,0 +1,17 @@
+# Template information section
+name: "viper_module"
+summary: "Swift VIPER module template with UIViewController"
+author: "Tomoya Itagaki"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+code_files:
+# View layer
+- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# Router layer
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}

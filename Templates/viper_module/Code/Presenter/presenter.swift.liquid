@@ -1,0 +1,35 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+protocol {{ module_info.name }}Presentation: AnyObject {
+    func viewDidLoad()
+    // TODO: Add functions
+}
+
+class {{ module_info.name }}Presenter {
+    private weak var view: {{ module_info.name }}View?
+
+    private let router: {{ module_info.name }}Wireframe
+    // TODO: Add any Interactors
+
+    init(view: {{ module_info.name }}View,
+         router: {{ module_info.name }}Wireframe
+         // TODO: Add any Interactors
+         ) {
+        self.view = view
+        self.router = router
+    }
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}Presentation {
+    func viewDidLoad() {
+        // TODO: implement
+    }
+}
